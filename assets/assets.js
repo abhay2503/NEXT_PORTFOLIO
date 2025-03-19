@@ -102,7 +102,7 @@ export const workData = [
     technologies: "React,TypeScript,NodeJS,Prisma",
     description:
       "A review-sharing platform for cafes, malls, and public places with filtering options.",
-    bgImage: "/Feedback-img.png",
+    bgImage: "/feedback-img.png",
     link: "https://talk-point-ts.vercel.app/",
   },
   {
