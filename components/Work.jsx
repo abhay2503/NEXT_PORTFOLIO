@@ -2,6 +2,7 @@ import { assets, workData } from '@/assets/assets'
 import Image from 'next/image'
 import React from 'react'
 import { motion } from "framer-motion" // Corrected to 'framer-motion'
+import Link from 'next/link';
 
 const Work = ({ isDarkMode }) => {
   return (
@@ -48,34 +49,38 @@ const Work = ({ isDarkMode }) => {
         className="grid grid-cols-1 md:grid-cols-3 gap-10"
       >
         {workData.map((project, index) => (
-          <motion.div
-            whileHover={{ scale: 1.05 }}
-            transition={{ duration: 0.3 }}
-            key={index}
-            className="rounded-lg shadow-lg overflow-hidden bg-white dark:bg-darkTheme border border-gray-300"
-          >
-            {/* Project Image */}
-            <div className="w-full aspect-[16/9] relative">
-              <Image
-                src={project.bgImage}
-                alt={project.title}
-                layout="fill"
-                objectFit="cover"
-                className="rounded-t-lg"
-              />
-            </div>
+          <Link target='_blank' href={project.link}>
+            <motion.div
+              whileHover={{ scale: 1.05 }}
+              transition={{ duration: 0.3 }}
+              key={index}
+              className="rounded-lg shadow-lg overflow-hidden bg-white dark:bg-darkTheme border border-gray-300"
+            >
+              {/* Project Image */}
 
-            {/* Project Details */}
-            <div className="p-5">
-              <h3 className="text-xl font-semibold mb-2 text-gray-900 dark:text-white">
-                {project.title}
-              </h3>
-              <p className="text-sm text-gray-700 dark:text-gray-400 mb-1">
-                <strong>Technologies:</strong> {project.technologies}
-              </p>
-              <p className="text-gray-600 dark:text-gray-300">{project.description}</p>
-            </div>
-          </motion.div>
+              <div className="w-full aspect-[16/9] relative">
+                <Image
+                  src={project.bgImage}
+                  alt={project.title}
+                  layout="fill"
+                  objectFit="cover"
+                  className="rounded-t-lg"
+                />
+              </div>
+
+              {/* Project Details */}
+              <div className="p-5">
+                <h3 className="text-xl font-semibold mb-2 text-gray-900 dark:text-white">
+                  {project.title}
+                </h3>
+                <p className="text-sm text-gray-700 dark:text-gray-400 mb-1">
+                  <strong>Technologies:</strong> {project.technologies}
+                </p>
+                <p className="text-gray-600 dark:text-gray-300">{project.description}</p>
+              </div>
+            </motion.div>
+          </Link>
+
         ))}
       </motion.div>
     </motion.div>

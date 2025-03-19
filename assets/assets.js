@@ -87,13 +87,15 @@ export const workData = [
     description:
       "Track and manage your expenses efficiently with budget limits and graphical insights.",
     bgImage: "/work-1.png",
+    link: "https://expense-tracker-three-weld.vercel.app/",
   },
   {
     title: "Fees Management",
     technologies: "NextJS,TypeScript,ReactJS,MYSQL",
     description:
-      "Efficient system for managing student records and monitoring monthly fee payments.",
+      "Efficient system for managing student records and tracking fee payments.",
     bgImage: "/fees-img.png",
+    link: "https://next-feesapp.vercel.app/",
   },
   {
     title: "TalkPoint",
@@ -101,13 +103,15 @@ export const workData = [
     description:
       "A review-sharing platform for cafes, malls, and public places with filtering options.",
     bgImage: "/Feedback-img.png",
+    link: "https://talk-point-ts.vercel.app/",
   },
   {
     title: "Evento",
-    technologies: "NextJS,TypeScript, ReactJS,MongoDB",
+    technologies: "NextJS,TypeScript, ReactJS",
     description:
-      "An event management app displaying events based on city selection and user interaction.",
+      "event management system displaying events based on city selection and user interaction.",
     bgImage: "/evento-img.png",
+    link: "https://evento-iota-ruby.vercel.app/",
   },
   {
     title: "CUETUG",
@@ -115,6 +119,7 @@ export const workData = [
     description:
       "An MCQ-based portal for CUET preparation with mock papers and study guidance.",
     bgImage: "/cuetug-img.png",
+    link: "https://cuetugexam.in/",
   },
 ];
 
