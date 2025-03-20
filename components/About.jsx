@@ -28,20 +28,13 @@ const About = ({ isDarkMode }) => {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.8 }}
-        className='flex w-full flex-col lg:flex-row items-center gap-20 my-20'>
-        <motion.div
-          initial={{ opacity: 0, scale: 0.9 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.6 }}
-          className='w-64 sm:w-80 rounded-3xl max-w-none'>
-          <Image src={assets.user_image} alt='user' className='w-full rounded-3xl' />
-        </motion.div>
+        className='flex w-full items-center  my-20'>
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.8 }}
-          className='flex-1'>
-          <p className='mb-10 max-w-2xl font-Ovo'
+          className='w-full flex flex-col items-center'>
+          <p className='mb-10 max-w-2xl font-Ovo text-center'
           >I am an experienced Full Stack Web Developer with over a decade of professional expertise in the field. Focusing on collaborating with design and product teams to deliver seamless user experiences. I optimized performance, improving user engagement, and ensuring every project meets and exceeds client expectations</p>
 
           <motion.ul
