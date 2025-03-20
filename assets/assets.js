@@ -119,7 +119,7 @@ export const workData = [
     description:
       "An MCQ-based portal for CUET preparation with mock papers and study guidance.",
     bgImage: "/cuetug-img.png",
-    link: "https://cuetugexam.in/",
+    link: "https://cuetugexam.in/cuet-exam-mock-test-papers",
   },
 ];
 
