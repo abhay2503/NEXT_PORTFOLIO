@@ -35,7 +35,7 @@ const About = ({ isDarkMode }) => {
           transition={{ duration: 0.6, delay: 0.8 }}
           className='w-full flex flex-col items-center'>
           <p className='mb-10 max-w-2xl font-Ovo text-center'
-          >I am an experienced Full Stack Web Developer with over a decade of professional expertise in the field. Focusing on collaborating with design and product teams to deliver seamless user experiences. I optimized performance, improving user engagement, and ensuring every project meets and exceeds client expectations</p>
+          >Experienced Full Stack Web Developer with a strong background in building high-performance web applications. Skilled in collaborating with design and product teams to create intuitive and engaging user experiences. Proven track record of optimizing performance to enhance user engagement and delivering projects that consistently exceed client expectations. Focused on writing clean, maintainable code and implementing best practices to drive efficiency and scalability in every project.</p>
 
           <motion.ul
             initial={{ opacity: 0 }}
