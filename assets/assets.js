@@ -98,6 +98,14 @@ export const workData = [
     link: "https://next-feesapp.vercel.app/",
   },
   {
+    title: "ReelUploader",
+    technologies: "NextJS,TS,ReactJS,MongoDb",
+    description:
+      "Users can easily upload and share reels with others with a seamless user experience.",
+    bgImage: "/reel-uploader.png",
+    link: "https://reel-uploader.vercel.app/",
+  },
+  {
     title: "TalkPoint",
     technologies: "React,TypeScript,NodeJS,Prisma",
     description:
